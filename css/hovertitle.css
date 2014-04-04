@@ -1,0 +1,47 @@
+.hovertitle-default{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: #fff;
+	color: #555;
+	border: 1px solid #555;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.hovertitle-gray{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: #ccc;
+	color: #555;
+	border: 1px solid #555;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.hovertitle-black{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: #000;
+	color: #e3e3e3;
+	border: 1px solid #555;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.hovertitle-blue{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: #00a2e8;
+	color: #e3e3e3;
+	border: 1px solid #555;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HoverTitle jQuery Plugin</title>
+	<link rel="stylesheet" href="css/hovertitle.css" />
+	<style type="text/css">
+		*{margin: 0;padding: 0;box-sizing: border-box;}
+		html,body{height: 100%;}
+		body{
+			background-color: #f2f2f2;
+		}
+		#wrapper{
+			width: 600px;
+			margin: 20px auto;
+			border: 2px solid #e3e3e3;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+			padding-left: 5px;
+			background-color: #fff;
+		}
+
+		#wrapper > h1{
+			text-align: center;
+			border-bottom: 1px dashed #d5d5d5;
+			margin-bottom: 5px;
+			padding: 5px;
+		}
+
+		#wrapper > h3{
+			margin-top: 5px;
+			margin-bottom: 2px;
+		}
+
+		#wrapper footer{
+			text-align: center; 
+			margin-top: 15px;
+		}
+
+		.hovertitle-red{
+			display: none;
+			position: absolute;
+			font-size: 14px;
+			background-color: red;
+			color: #fff;
+			border: 1px solid #555;
+			padding: 10px;
+			border-radius: 4px;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>HoverTitle Plugin: Demo</h1>
+		
+		<a class="cool" href="#">Link 1</a> <br/>
+		<a class="cool" href="#">Link 2</a> <br/>
+
+		<a id="special" data-hovertitle="I am a special link" href="#" >Special Link</a> <br/>
+
+		<a id="funky" href="#" >I use text property of default options</a> <br/>
+
+		<a id="custom_theme" href="#" >I use a Custom red Theme</a> <br/>
+
+		<img id="google" src="img/google.png" alt="LOGO GOOGLE" />
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, adipisci, saepe, ea porro ad eveniet nihil ipsum reiciendis <a class="cool" href="#">Link 3</a> labore magni fugiat nesciunt voluptatibus <a class="cool" href="#">Link 4</a> sint voluptatum aspernatur aliquid magnam provident veritatis!
+		</p>
+
+		<h3>Facebook</h3>
+		<p id="facebook">Facebook Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ex dolorum dolorem rem quam molestias adipisci! Ipsa tenetur recusandae nam ducimus mollitia. Perspiciatis, commodi pariatur natus labore ea aliquam odio.
+		</p>
+
+		<footer>
+			<p>&copy; 2014 <small>Honoré HOUNWANOU</small></p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/hovertitle.js"></script>
+	<script type="text/javascript">
+
+		$.fn.HoverTitle.options = {
+		   theme: 'black',
+		   text: 'Have fun guys!',
+		   animation: 'fadeIn'
+		}
+
+		$("a.cool").HoverTitle("This text is for cool anchor");
+
+		$("img#google").HoverTitle({
+		  text: "Pretty Logo of Google",
+		  theme: 'gray'
+		});
+		
+		$("a#special").HoverTitle();
+
+		$("a#funky").HoverTitle();
+
+		$("a#custom_theme").HoverTitle({
+	      text: "I use red :)",
+		  theme: 'red'
+		});
+
+		$("p#facebook").HoverTitle({
+		  theme: 'blue',
+		  text: 'A popular social network',
+		  animation: 'slideDown',
+		  duration: 500
+		});
+
+	</script>
+</body>
+</html>
