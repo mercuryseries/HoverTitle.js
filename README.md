@@ -5,7 +5,10 @@ Here is a jQuery Plugin that allow you to add a title to any element of the DOM.
 This title appears when the user hover the given element.
 
 
+
 ## How does it work?
+
+Firstly you have to download two files: `hovertitle.js` and `hovertitle.css`
 
 ## Straightforward way
 `HoverTitle` plugin is simple to use with the  straightforward way. Look at this examples:
