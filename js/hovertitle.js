@@ -1,6 +1,6 @@
 /**
 HoverTitle jQuery Plugin
-Create with Love by Honore HOUNWANOU
+Built with Love by Honore HOUNWANOU
 Be free guys to play with it.
 Copyright 2014 - Les TEACHERS DU NET 
 **/
