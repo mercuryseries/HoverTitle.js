@@ -58,7 +58,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, adipisci, sae
 
 #### Create your own theme
 
-You case use many themes for your title. By default, the default theme is used :)  
+HoverTitle allows you to as many themes as you want. By default, the default theme is used :)  
 But of course, you can use others themes like `blue, gray, black ` or create your own theme.
 
 For creating your own theme, you just have to modify the css file **hovertitle.css** and add a new class `hovertitle-name_of_your_theme`. For example` hovertitle-red`.
